@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosCloseCircle, IoIosCloseCircleOutline } from "react-icons/io";
+import { FaCirclePlus } from "react-icons/fa6";
 
 function App() {
   const [hovered, sethover] = useState(false);
@@ -113,9 +114,9 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex ">
                 <div
-                  className=" flex w-[170px] rounded-lg flex-col overflow-hidden p-2 hover:shadow-2xl"
+                  className=" flex w-[170px] rounded-lg flex-col overflow-hidden p-2 hover:shadow-2xl outline outline-1 outline-gray-300"
                   onMouseEnter={() => {
                     sethover(true);
                   }}
@@ -123,12 +124,12 @@ function App() {
                     sethover(false);
                   }}
                 >
-                  <div>
-                    <img src="../public/images/fb.jpeg"></img>
+                  <div className="flex justify-center h-28 items-center">
+                    <FaCirclePlus color="#1976F2" className=" size-10" />
                   </div>
 
-                  <div className="bg-white flex justify-center py-3">
-                    yourname
+                  <div className="bg-white flex justify-center py-3 text-saroj">
+                    Add Account
                   </div>
                 </div>
               </div>
